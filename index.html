@@ -18,12 +18,12 @@
             <ul class="nav-links" id="navLinks">
                     <li><a href="#" data-page="problem">The Problem</a>a></li>
                   <li><a href="#" data-page="dimensions">Dimensions</a>a></li>
-            </li></li>      <li><a href="#" data-page="ehc">Essential Human Core</a>a></li>
+                  <li><a href="#" data-page="ehc">Essential Human Core</a>a></li>
                   <li><a href="#" data-page="toolkit">Toolkit</a>a></li>
                   <li><a href="#" data-page="assess">Self-Check</a>a></li>
                   <li><a href="#" data-page="research">Research</a>a></li>
             </ul>ul>
-          <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>button>
+          <button class="nav-toggle" id="navToggle" aria-label="Menu">Menu</button>button>
       </div>div>
   </nav>nav>
 
@@ -37,6 +37,157 @@
             <span class="eyebrow">A New Framework for Career Development</span>span>
             <h1 class="hero-title">The<br><em>Presence</em><br>Gap</h1>h1>
             <p class="hero-sub">The distance between what you can produce digitally and what you can embody in person.</p>p>
-      </em></li></li>
+            <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="app.goTo('problem')">Explore the Gap</button>button>
+                    <button class="btn btn-secondary" onclick="app.goTo('assess')">Self-Check</button>button>
+            </div>div>
+      </div>div>
+  </div>div>
+
+  <!-- PROBLEM -->
+  <div class="page" id="page-problem">
+      <div class="container">
+            <div class="section-header">
+                    <h2 class="section-title">The Digital Mirage</h2>h2>
+                    <p class="section-lead">As AI commoditizes digital output, the value of digital presence is plummeting while the value of physical presence is skyrocketing.</p>p>
+            </div>div>
+            <div class="content-grid">
+                    <div class="card card-dark">
+                              <h3>The Production Paradox</h3>
+                              <p>When anyone can produce high-quality code, text, or art in seconds, the output itself is no longer a signal of expertise or commitment.</p>
+                    </div>div>
+                    <div class="card card-dark">
+                              <h3>The Authenticity Crisis</h3>
+                              <p>In a world of deepfakes and AI agents, trust can only be reliably established through high-bandwidth, in-person interaction.</p>
+                    </div>div>
+            </div>div>
+      </div>div>
+  </div>div>
+
+  <!-- DIMENSIONS -->
+  <div class="page" id="page-dimensions">
+      <div class="container">
+            <h2 class="section-title">The Three Dimensions</h2>
+            <div class="dim-grid">
+                    <div class="dim-card" id="dim-intellectual">
+                              <div class="dim-icon">Intellectual</div>div>
+                              <h3>Intellectual</h3>
+                              <p>Real-time synthesis, critical thinking, and the ability to defend ideas without a prompt.</p>
+                    </div>div>
+                    <div class="dim-card" id="dim-emotional">
+                              <div class="dim-icon">Emotional</div>div>
+                              <h3>Emotional</h3>
+                              <p>Nuance, empathy, and the ability to read the room skills AI can mimic but not feel.</p>
+                    </div>div>
+                    <div class="dim-card" id="dim-physical">
+                              <div class="dim-icon">Physical</div>div>
+                              <h3>Physical</h3>
+                              <p>The biological signals of trust, confidence, and authority that only exist in person.</p>
+                    </div>div>
+            </div>div>
+      </div>div>
+  </div>div>
+
+  <!-- EHC -->
+  <div class="page" id="page-ehc">
+      <div class="container">
+            <div class="split-view">
+                    <div class="split-text">
+                              <h2 class="section-title">The Essential Human Core</h2>
+                              <p>The skills that will remain valuable for decades aren't technical they are biological and social.</p>
+                              <ul class="check-list">
+                                          <li>Dynamic Conflict Resolution</li>
+                                          <li>Real-time Strategic Pivot</li>
+                                          <li>High-Stakes Embodied Presence</li>
+                                          <li>Collective Meaning Making</li>
+                              </ul>ul>
+                    </div>div>
+                    <div class="split-visual">
+                              <div class="core-diagram">
+                                          <div class="core-circle">AI</div>div>
+                                          <div class="core-circle human">YOU</div>div>
+                              </div>div>
+                    </div>div>
+            </div>div>
+      </div>div>
+  </div>div>
+
+  <!-- TOOLKIT -->
+  <div class="page" id="page-toolkit">
+      <div class="container">
+            <h2 class="section-title">The Presence Toolkit</h2>
+            <div class="toolkit-grid">
+                    <div class="tool-item">
+                              <div class="tool-num">01</div>div>
+                              <h4>Rapid Synthesis</h4>
+                              <p>Practice summarizing complex meetings in 30 seconds without notes.</p>
+                    </div>div>
+                    <div class="tool-item">
+                              <div class="tool-num">02</div>div>
+                              <h4>Body Language Audit</h4>
+                              <p>Identify your "tells" under stress and practice neutral power poses.</p>
+                    </div>div>
+                    <div class="tool-item">
+                              <div class="tool-num">03</div>div>
+                              <h4>The Un-Promptable Question</h4>
+                              <p>Learn to ask the questions that force a room out of "autopilot."</p>
+                    </div>div>
+            </div>div>
+      </div>div>
+  </div>div>
+
+  <!-- SELF-CHECK -->
+  <div class="page" id="page-assess">
+      <div class="container narrow">
+            <h2 class="section-title">The Presence Audit</h2>
+            <p class="center-text">How wide is your Gap? Be honest.</p>
+            <div id="quiz-container">
+                    <div class="quiz-step active" data-step="1">
+                              <p class="quiz-q">If your internet went out during a high-stakes presentation, could you finish it effectively?</p>
+                              <div class="quiz-options">
+                                          <button class="quiz-btn" onclick="app.quiz(1, 10)">Yes, easily.</button>button>
+                                          <button class="quiz-btn" onclick="app.quiz(1, 5)">I'd struggle, but survive.</button>button>
+                                          <button class="quiz-btn" onclick="app.quiz(1, 0)">I'd be totally lost.</button>button>
+                              </div>div>
+                    </div>div>
+                    <div id="quiz-result" class="hidden">
+                              <h3>Your Score: <span id="score-val">0</span>span></h3>
+                              <p id="score-text"></p>
+                    </div>div>
+            </div>div>
+      </div>div>
+  </div>div>
+
+  <!-- RESEARCH -->
+  <div class="page" id="page-research">
+      <div class="container">
+            <h2 class="section-title">Evidence & Research</h2>
+            <div class="research-row">
+                    <div class="research-stat">
+                              <div class="stat-num">85%</div>div>
+                              <p>of job success comes from well-developed soft skills and people skills.</p>
+                              <small>Harvard/Stanford Research</small>
+                    </div>div>
+                    <div class="research-stat">
+                              <div class="stat-num">300ms</div>div>
+                              <p>is all it takes for a human to form a first impression of trust in person.</p>
+                              <small>Princeton University Study</small>
+                    </div>div>
+            </div>div>
+      </div>div>
+  </div>div>
+
+</div>div> <!-- END PAGE WRAPPER -->
+
+<footer id="footer">
+  <div class="container">
+      <p>&copy; 2024 The Presence Gap Project. Embody your value.</p>
+  </div>div>
+</footer>footer>
+
+<script src="app.js"></script>
+</body>
+</html>html>
+</p></small></small></p></p></li></li></p></p></h3></em></li></li>
 </body></title>
   </head>
