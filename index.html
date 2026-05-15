@@ -3,357 +3,596 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Presence Gap | Career Development in the Age of AI</title>
-<meta name="description" content="The Presence Gap is the distance between what you can produce digitally and what you can embody in person. A new framework for career development in the AI era.">
+<title>The Presence Gap — A Tripartite Framework for Career Preparation in the AI Era</title>
+<meta name="description" content="An interactive exploration of the Presence Gap: the tripartite disconnection from identity, others, and purpose that generative AI amplifies in career preparation.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* Critical: hide all pages immediately before external CSS loads */
+.page { display: none !important; }
+.page.active { display: block !important; }
+#hero.page.active { display: flex !important; min-height: 100vh; }
+</style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav id="navbar">
   <div class="nav-inner">
-    <a href="#" class="nav-logo" data-page="home">Presence Gap</a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#" data-page="problem">The Problem</a></li>
-      <li><a href="#" data-page="dimensions">Dimensions</a></li>
-      <li><a href="#" data-page="ehc">Essential Human Core</a></li>
-      <li><a href="#" data-page="toolkit">Toolkit</a></li>
-      <li><a href="#" data-page="assess">Self-Check</a></li>
-      <li><a href="#" data-page="research">Research</a></li>
+    <span class="nav-logo" onclick="showPage('hero')">Presence Gap</span>
+    <ul class="nav-links">
+      <li><a href="#" class="nav-link active" data-page="hero">Home</a></li>
+      <li><a href="#" class="nav-link" data-page="framework">Framework</a></li>
+      <li><a href="#" class="nav-link" data-page="dimensions">Dimensions</a></li>
+      <li><a href="#" class="nav-link" data-page="theory">Theory</a></li>
+      <li><a href="#" class="nav-link" data-page="ai-modes">AI Modes</a></li>
+      <li><a href="#" class="nav-link" data-page="assessment">Self-Assessment</a></li>
+      <li><a href="#" class="nav-link" data-page="screening">Screening</a></li>
+      <li><a href="#" class="nav-link" data-page="practitioner">Practitioner</a></li>
+      <li><a href="#" class="nav-link" data-page="research">Research</a></li>
     </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
   </div>
 </nav>
 
-<!-- PAGE WRAPPER -->
-<div id="pageWrapper">
-
-<!-- HOME -->
-<div class="page active" id="page-home">
+<!-- HERO -->
+<section id="hero" class="page active">
   <div class="hero-bg"></div>
   <div class="hero-content">
-    <span class="eyebrow">A New Framework for Career Development</span>
-    <h1 class="hero-title">The<br><em>Presence</em><br>Gap</h1>
-    <p class="hero-sub">The distance between what you can produce digitally and what you can embody in person.</p>
-    <div class="hero-cta">
-      <button class="btn-primary" data-page="problem">Explore the Framework</button>
-      <button class="btn-ghost" data-page="assess">Take the Self-Check</button>
+    <p class="hero-eyebrow">Career Development International · Conceptual Framework Version 10i</p>
+    <h1 class="hero-title">The <em>Presence Gap</em></h1>
+    <p class="hero-sub">A tripartite theoretical framework for career identity formation, developmental career relatedness, and work-purpose clarity in the age of generative artificial intelligence.</p>
+    <div class="hero-pills">
+      <a href="#" class="pill pill-self nav-link" data-page="dimensions">Career Identity Formation</a>
+      <a href="#" class="pill pill-other nav-link" data-page="dimensions">Developmental Relatedness</a>
+      <a href="#" class="pill pill-purpose nav-link" data-page="dimensions">Work-Purpose Clarity</a>
     </div>
-    <div class="hero-stats">
-      <div class="stat"><span class="stat-num" data-target="140">0</span><span class="stat-unit">hrs</span><span class="stat-label">Fewer face-to-face hours per year for today's workforce entrants</span></div>
-      <div class="stat"><span class="stat-num" data-target="3">0</span><span class="stat-unit">dims</span><span class="stat-label">Dimensions: self, others, and purpose</span></div>
-      <div class="stat"><span class="stat-num" data-target="28">0</span><span class="stat-unit">%</span><span class="stat-label">of 12th graders socializing daily in person (down from 52%)</span></div>
+    <div class="hero-actions">
+      <a href="#" class="hero-cta nav-link" data-page="framework">Explore the Framework →</a>
+      <a href="#" class="hero-cta-secondary nav-link" data-page="assessment">Take Self-Assessment</a>
     </div>
   </div>
-</div>
+  <div class="hero-visual" aria-hidden="false">
+    <div class="orbit-wrap">
+      <div class="orbit-ring ring-1">
+        <a href="#" class="orbit-label label-self nav-link" data-page="dimensions">Identity</a>
+      </div>
+      <div class="orbit-ring ring-2">
+        <a href="#" class="orbit-label label-other nav-link" data-page="dimensions">Network</a>
+      </div>
+      <div class="orbit-ring ring-3">
+        <a href="#" class="orbit-label label-purpose nav-link" data-page="dimensions">Purpose</a>
+      </div>
+      <div class="orbit-center">
+        <span>PG</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- THE PROBLEM -->
-<div class="page" id="page-problem">
-  <div class="page-inner">
-    <div class="page-header">
-      <span class="eyebrow">The Challenge</span>
-      <h2>The Document Is Perfect.<br>The Human Being Is Not.</h2>
-    </div>
-    <div class="problem-grid">
-      <div class="problem-story">
-        <p class="story-text">"A professional enters an interview room with a flawless AI-generated resume and a cover letter refined through multiple rounds of machine-assisted editing. When the interviewer asks a question that requires genuine self-knowledge or authentic presence, the disconnect becomes visible. The candidate knows what to say. They do not know who they are when they say it."</p>
-        <cite>— <em>The Presence Gap</em>, v5a</cite>
+<!-- FRAMEWORK INTRO -->
+<section id="framework" class="section page">
+  <div class="container">
+    <div class="section-label">What is the Presence Gap?</div>
+    <h2 class="section-title">The Gap Between Documentation and Identity</h2>
+    <div class="intro-grid">
+      <div class="intro-text">
+        <p class="lead">A candidate enters an interview room carrying a polished AI-generated résumé. When asked what drew them to this field, the answer sounds right — but does not hold. The document exists. The career does not yet.</p>
+        <p>This is the Presence Gap: a career-domain-specific configural condition in which externally polished career-readiness artefacts coexist with simultaneous deficits in <a href="#" class="inline-link" onclick="showPage('dimensions')">career identity formation</a>, <a href="#" class="inline-link" onclick="showPage('dimensions')">developmental career relatedness</a>, and <a href="#" class="inline-link" onclick="showPage('dimensions')">work-purpose clarity</a>.</p>
+        <p>The Presence Gap is distinguished from the additive co-occurrence of its component deficit states by three features: a <a href="#" class="inline-link" onclick="showPage('ai-modes')">common causal mechanism</a> (developmental bypass via substitutive AI), a <a href="#" class="inline-link" onclick="showPage('assessment')">configural threshold structure</a>, and a unique SCCT self-efficacy deprivation signature mediated by <a href="#" class="inline-link" onclick="showPage('theory')">work volition</a>.</p>
       </div>
-      <div class="problem-cards">
-        <div class="p-card">
-          <div class="p-card-icon">&#9650;</div>
-          <h3>AI Automates the Output</h3>
-          <p>Generative AI can now write your resume, cover letter, and interview prep in seconds — bypassing the reflective work through which career identity is actually built.</p>
-        </div>
-        <div class="p-card">
-          <div class="p-card-icon">&#9660;</div>
-          <h3>The Developmental Cost Is Hidden</h3>
-          <p>The output looks polished. But the person hasn't done the inner work. AI removes the developmental scaffolding while preserving the result.</p>
-        </div>
-        <div class="p-card">
-          <div class="p-card-icon">&#9670;</div>
-          <h3>The Gap Widens</h3>
-          <p>Digital overload, social comparison, and mediated communication compound the problem — with AI as the most powerful accelerant of a broader digital ecology.</p>
-        </div>
+      <div class="intro-cards">
+        <a href="#" class="mini-card nav-link" data-page="ai-modes">
+          <div class="mini-icon">⚙</div>
+          <strong>Common Mechanism</strong>
+          <span>Substitutive AI developmental bypass — one cause, three simultaneous deficits</span>
+        </a>
+        <a href="#" class="mini-card nav-link" data-page="assessment">
+          <div class="mini-icon">⬡</div>
+          <strong>Configural Threshold</strong>
+          <span>All three dimensions must co-occur; sub-threshold on any one is not the construct</span>
+        </a>
+        <a href="#" class="mini-card nav-link" data-page="research">
+          <div class="mini-icon">⚡</div>
+          <strong>Efficacy Signature (SCCT)</strong>
+          <span>Deprivation of performance-accomplishment channels, exacerbated by low work volition</span>
+        </a>
       </div>
-    </div>
-    <blockquote class="pull-quote">"The Presence Gap is not new. What is new is the acceleration."</blockquote>
-    <div class="page-nav-row">
-      <button class="btn-ghost small" data-page="home">&#8592; Home</button>
-      <button class="btn-primary small" data-page="dimensions">Next: Dimensions &#8594;</button>
     </div>
   </div>
-</div>
+</section>
 
 <!-- THREE DIMENSIONS -->
-<div class="page" id="page-dimensions">
-  <div class="page-inner">
-    <div class="page-header">
-      <span class="eyebrow">The Framework</span>
-      <h2>Three Dimensions of Disconnection</h2>
-      <p class="page-sub">Each dimension maps 1:1 to an established career development theory. Each has distinct manifestations — and distinct interventions.</p>
-    </div>
-    <div class="dim-grid">
-      <div class="dim-card" data-dim="self">
-        <div class="dim-num">01</div>
-        <div class="dim-tag">Career Construction Theory</div>
-        <h3>Disconnection from Self</h3>
-        <p>A disruption in identity clarity, values alignment, and inhabitable career narrative. When AI generates your professional story, you arrive at career situations with outputs you cannot inhabit.</p>
-        <div class="dim-footer">
-          <span class="dim-label">EHC Strain:</span>
-          <span class="dim-value">Authentic Presence</span>
+<section id="dimensions" class="section section-dark page">
+  <div class="container">
+    <div class="section-label">The Tripartite Architecture</div>
+    <h2 class="section-title">Three Dimensions of Disconnection</h2>
+    <p class="section-intro">Each dimension is grounded in a specific theoretical home offering the explanatory machinery for that aspect of career development. Learn more in the <a href="#" class="inline-link" onclick="showPage('theory')">Theory section</a>.</p>
+    <div class="dims-grid">
+
+      <div class="dim-card dim-self" data-dim="self">
+        <div class="dim-header">
+          <span class="dim-num">01</span>
+          <span class="dim-tag">CCT</span>
         </div>
-      </div>
-      <div class="dim-card" data-dim="others">
-        <div class="dim-num">02</div>
-        <div class="dim-tag">Relational-Cultural Theory</div>
-        <h3>Disconnection from Others</h3>
-        <p>More contact, less connection. The co-presence freeze — delayed responses, physical stillness, conversational difficulty — is a protective adaptation, not a skill deficit.</p>
-        <div class="dim-footer">
-          <span class="dim-label">EHC Strain:</span>
-          <span class="dim-value">Relational Depth</span>
+        <h3>Career Identity Formation</h3>
+        <p class="dim-theory">Career Construction Theory (Savickas, 2013)</p>
+        <p>The degree to which a person has developed an integrated, inhabited career self-concept. The deficit is not lack of a professional story but possession of a story they did not write.</p>
+        <div class="dim-detail" id="detail-self">
+          <h4>The CCT Mechanism</h4>
+          <p>Career identity is built through narrating vocational experience. When AI generates professional identity without provisional self-testing, concern is eroded, curiosity foreclosed, and confidence atrophied.</p>
+          <div class="dim-impacts">
+            <span>Concern eroded</span><span>Curiosity foreclosed</span><span>Confidence atrophied</span>
+          </div>
+          <button class="small-btn" onclick="showPage('practitioner')">View Interventions</button>
         </div>
+        <button class="dim-toggle" onclick="toggleDim('self')">Learn more ↓</button>
       </div>
-      <div class="dim-card" data-dim="purpose">
-        <div class="dim-num">03</div>
-        <div class="dim-tag">Psychology of Working Theory</div>
-        <h3>Disconnection from Purpose</h3>
-        <p>Executing tasks disconnected from why they matter. Algorithmic optimization orients professionals toward externally defined metrics rather than internally held values.</p>
-        <div class="dim-footer">
-          <span class="dim-label">EHC Strain:</span>
-          <span class="dim-value">Purposive Engagement</span>
+
+      <div class="dim-card dim-other" data-dim="other">
+        <div class="dim-header">
+          <span class="dim-num">02</span>
+          <span class="dim-tag">DNT</span>
         </div>
+        <h3>Developmental Career Relatedness</h3>
+        <p class="dim-theory">Developmental Network Theory (Higgins & Kram, 2001)</p>
+        <p>The degree to which a person has built a network of relationships that actively support career development (mentoring, peer support, role models).</p>
+        <div class="dim-detail" id="detail-other">
+          <h4>The Relational Bypass</h4>
+          <p>When résumés and networking messages are AI-generated, the relational encounters these documents are meant to initiate are bypassed. The relational social capital through which careers develop does not form.</p>
+          <div class="dim-impacts">
+            <span>Mentorship absent</span><span>Network centrality low</span><span>Sponsorship lacking</span>
+          </div>
+          <button class="small-btn" onclick="showPage('practitioner')">View Interventions</button>
+        </div>
+        <button class="dim-toggle" onclick="toggleDim('other')">Learn more ↓</button>
       </div>
-    </div>
-    <div class="chronic-banner">
-      <span class="chronic-label">CHRONIC PRESENCE GAP &#8594;</span>
-      <span class="chronic-desc">Sustained, high-level disconnection across all three dimensions places the <strong>Essential Human Core</strong> under strain.</span>
-    </div>
-    <div class="page-nav-row">
-      <button class="btn-ghost small" data-page="problem">&#8592; The Problem</button>
-      <button class="btn-primary small" data-page="ehc">Next: Essential Human Core &#8594;</button>
+
+      <div class="dim-card dim-purpose" data-dim="purpose">
+        <div class="dim-header">
+          <span class="dim-num">03</span>
+          <span class="dim-tag">PWT</span>
+        </div>
+        <h3>Work-Purpose Clarity</h3>
+        <p class="dim-theory">Psychology of Working Theory (Duffy et al., 2016)</p>
+        <p>The degree to which a person has developed an integrated sense of the values and meaning they seek in work. Deficit: AI-generated identity is optimised for market legibility, not values-engagement.</p>
+        <div class="dim-detail" id="detail-purpose">
+          <h4>The Work-Volition Substrate</h4>
+          <p>Without work-purpose clarity, candidates lack the <em>work volition</em> — the internalised motivation — needed to sustain the self-initiated effort required to rebuild their identity and relationships. This makes the Presence Gap self-reinforcing.</p>
+          <div class="dim-impacts">
+            <span>Market-optimised</span><span>Values unengaged</span><span>Low Work Volition</span>
+          </div>
+          <button class="small-btn" onclick="showPage('practitioner')">View Interventions</button>
+        </div>
+        <button class="dim-toggle" onclick="toggleDim('purpose')">Learn more ↓</button>
+      </div>
+
     </div>
   </div>
-</div>
+</section>
 
-<!-- EHC -->
-<div class="page" id="page-ehc">
-  <div class="page-inner">
-    <div class="page-header">
-      <span class="eyebrow">What Is at Stake</span>
-      <h2>The Essential Human Core</h2>
-      <p class="page-sub">The constellation of distinctively human capacities that AI cannot replicate — and that a chronic Presence Gap places under sustained strain.</p>
-    </div>
-    <div class="ehc-grid">
-      <div class="ehc-card">
-        <div class="ehc-icon">&#9685;</div>
-        <h3>Authentic Presence</h3>
-        <p>The capacity for full, undivided engagement with the immediate relational environment. AI can simulate attentiveness — it cannot be present.</p>
+<!-- THEORY PAGE -->
+<section id="theory" class="section page">
+  <div class="container">
+    <div class="section-label">Theoretical Architecture</div>
+    <h2 class="section-title">The Foundation of the Framework</h2>
+    <p class="section-intro">The Presence Gap integrates four major theoretical frameworks to explain how developmental bypass impacts career entry.</p>
+    
+    <div class="theory-grid">
+      <div class="theory-block">
+        <h3>Career Construction Theory (CCT)</h3>
+        <p><strong>Focus:</strong> Career Identity Formation</p>
+        <p>CCT (Savickas, 2013) holds that career identity is built through the recursive, effortful process of narrating vocational experience. Career adaptability is the psychosocial infrastructure through which this construction occurs. AI bypasses the creation of "provisional selves" (Ibarra, 1999) needed to build stable identity.</p>
       </div>
-      <div class="ehc-card">
-        <div class="ehc-icon">&#9724;</div>
-        <h3>Relational Depth</h3>
-        <p>Professional relationships characterized by mutual vulnerability, sustained care, and trust built through consistent authentic presence over time.</p>
+      <div class="theory-block">
+        <h3>Developmental Network Theory (DNT)</h3>
+        <p><strong>Focus:</strong> Developmental Career Relatedness</p>
+        <p>Higgins and Kram (2001) establish that career-relevant support is built through differentiated engagement with multiple developmental partners (sponsors, mentors, peers). Substitutive AI use disrupts this by mediating or bypassing the relational encounters that career preparation tasks were formerly designed to initiate.</p>
       </div>
-      <div class="ehc-card">
-        <div class="ehc-icon">&#9670;</div>
-        <h3>Purposive Engagement</h3>
-        <p>Action coherently connected to a meaningful sense of <em>why</em> — reflecting actual values and sustaining motivation through difficulty. AI can optimize toward objectives; it cannot generate purpose.</p>
+      <div class="theory-block">
+        <h3>Psychology of Working Theory (PWT)</h3>
+        <p><strong>Focus:</strong> Work-Purpose Clarity</p>
+        <p>PWT (Duffy et al., 2016) focuses on decent, dignified work. Its key mechanism for the Presence Gap is <em>work volition</em>. When AI optimises career materials for market legibility rather than genuine values alignment, the candidate fails to develop the internalised motivation required to drive self-determined career choices.</p>
+      </div>
+      <div class="theory-block">
+        <h3>Social Cognitive Career Theory (SCCT)</h3>
+        <p><strong>Focus:</strong> Linking Mechanism</p>
+        <p>SCCT (Lent et al., 1994) explains the distinctive vulnerability. Substitutive AI deprives users of <em>performance accomplishments</em> (mastery experiences) and impairs <em>physiological arousal management</em> (unscripted encounters). The tripartite configuration is uniquely devastating because the lack of work-purpose removes the motivation to recover the other two deficits.</p>
       </div>
     </div>
-    <div class="ehc-definition">
-      <h4>Formal Definition</h4>
-      <p><strong>Presence Gap:</strong> An integrative construct describing the discrepancy between a person's inner capacity and desire for connection and their lived participation in real career situations, amplified by digital overload — including but not limited to AI tools — and deepened when generative AI displaces the reflective and values-clarifying processes through which career identity, relational capacity, and purpose are ordinarily built.</p>
-    </div>
-    <div class="page-nav-row">
-      <button class="btn-ghost small" data-page="dimensions">&#8592; Dimensions</button>
-      <button class="btn-primary small" data-page="toolkit">Next: Toolkit &#8594;</button>
+    <div class="cta-banner">
+      <p>How does this theory map to testable claims?</p>
+      <button class="hero-cta" onclick="showPage('research')">View Research Propositions</button>
     </div>
   </div>
-</div>
+</section>
 
-<!-- TOOLKIT -->
-<div class="page" id="page-toolkit">
-  <div class="page-inner">
-    <div class="page-header">
-      <span class="eyebrow">Practitioner Applications</span>
-      <h2>The Presence Gap Toolkit</h2>
-      <p class="page-sub">Four evidence-informed tools for career counselors — each targeting a specific dimension, restoring the developmental friction that AI efficiency removes.</p>
-    </div>
-    <div class="tool-grid">
-      <div class="tool-card" data-tool="1">
-        <div class="tool-header">
-          <span class="tool-num">Tool 01</span>
-          <span class="tool-dim">Self-disconnection</span>
-        </div>
-        <h3>Values Audit Protocol</h3>
-        <p>The counselor interrogates AI-generated career materials with the client present — demanding narrative accountability for every substantive claim. <em>"Tell me a specific story of when you actually embodied that."</em></p>
-        <div class="tool-theory">Grounded in Career Construction Theory</div>
+<!-- AI USE MODES -->
+<section id="ai-modes" class="section page">
+  <div class="container">
+    <div class="section-label">Boundary Conditions</div>
+    <h2 class="section-title">Three AI Use Modes</h2>
+    <p class="section-intro">Not all AI-assisted career preparation produces developmental bypass. Three modes are theoretically distinguishable, and only one leads to the Presence Gap. See <a href="#" class="inline-link" onclick="showPage('research')">Proposition 3</a>.</p>
+    <div class="modes-wrapper">
+      <div class="modes-tabs">
+        <button class="mode-tab active" onclick="setMode(0)" id="tab-0">Mode 1: Substitutive</button>
+        <button class="mode-tab" onclick="setMode(1)" id="tab-1">Mode 2: Iterative</button>
+        <button class="mode-tab" onclick="setMode(2)" id="tab-2">Mode 3: Dialogic</button>
       </div>
-      <div class="tool-card" data-tool="2">
-        <div class="tool-header">
-          <span class="tool-num">Tool 02</span>
-          <span class="tool-dim">Narrative recovery</span>
+      <div class="modes-panel">
+        <div class="mode-content active" id="mode-0">
+          <div class="mode-risk risk-high">⚠ High Presence Gap Risk</div>
+          <h3>Substitutive Ghostwriter</h3>
+          <p>AI generates the résumé, cover letter, or interview answers. The user reviews and edits but does not substantially author or reflect. Developmental work is bypassed. This mode removes reflective, relational, and values-clarifying career preparation work.</p>
+          <button class="small-btn mt-4" onclick="showPage('practitioner')">How to intervene</button>
         </div>
-        <h3>Analog Artifact Exercise</h3>
-        <p>Clients describe a career achievement using only physical objects or hand drawings — no devices. The counselor listens for the raw, emotionally textured narrative AI could never generate.</p>
-        <div class="tool-theory">Grounded in Career Construction Theory</div>
-      </div>
-      <div class="tool-card" data-tool="3">
-        <div class="tool-header">
-          <span class="tool-num">Tool 03</span>
-          <span class="tool-dim">Other-disconnection</span>
+        <div class="mode-content" id="mode-1">
+          <div class="mode-risk risk-low">✓ Low Presence Gap Risk</div>
+          <h3>Iterative Feedback</h3>
+          <p>User drafts independently; AI critiques, challenges, and suggests revisions. Authorship is retained. However, this mode collapses toward Mode 1 if the user passively accepts AI suggestions without evaluative engagement.</p>
         </div>
-        <h3>Relational Stakeholder Map</h3>
-        <p>Clients map only relationships organized by mutual vulnerability — not utility. Reveals the real relational architecture beneath LinkedIn connection counts.</p>
-        <div class="tool-theory">Grounded in Relational-Cultural Theory</div>
-      </div>
-      <div class="tool-card" data-tool="4">
-        <div class="tool-header">
-          <span class="tool-num">Tool 04</span>
-          <span class="tool-dim">AI use protocol</span>
+        <div class="mode-content" id="mode-2">
+          <div class="mode-risk risk-none">✦ Developmental Enhancement</div>
+          <h3>Dialogic Scaffolding</h3>
+          <p>AI functions as a questioning partner—asking about experiences, values, and goals—helping the user surface content they then author independently. Developmental work is preserved and potentially enhanced.</p>
+          <button class="small-btn mt-4" onclick="showPage('practitioner')">View Practitioner Tools</button>
         </div>
-        <h3>AI as Translation Engine</h3>
-        <p>A 5-step framework: Excavate &#8594; Select &#8594; Translate &#8594; Review &#8594; Inhabit. AI enters only at Step 3 — after the person has already generated the authentic content.</p>
-        <div class="tool-theory">CCT + Psychology of Working Theory</div>
       </div>
-    </div>
-    <div class="page-nav-row">
-      <button class="btn-ghost small" data-page="ehc">&#8592; Essential Human Core</button>
-      <button class="btn-primary small" data-page="assess">Next: Self-Check &#8594;</button>
     </div>
   </div>
-</div>
+</section>
 
-<!-- SELF-CHECK -->
-<div class="page" id="page-assess">
-  <div class="page-inner assess-page-inner">
-    <div class="page-header">
-      <span class="eyebrow">Self-Assessment</span>
-      <h2>Where Is Your Presence Gap?</h2>
-      <p class="page-sub">Answer three questions honestly. This is not a clinical instrument — it is a reflective prompt to locate your disconnection.</p>
-    </div>
-    <div class="assess-wrap">
-      <div class="assess-card" id="assessCard">
-        <div class="assess-progress"><div class="assess-bar" id="assessBar"></div></div>
-        <div id="assessContent">
-          <div class="q-block active" data-q="0">
-            <p class="q-dim">Dimension 1 — Self</p>
-            <h3 class="q-text">Could you narrate, in a live conversation, the real story behind every claim in your current resume or professional bio?</h3>
-            <div class="q-options">
-              <button class="q-btn" data-score="1">Yes — every line</button>
-              <button class="q-btn" data-score="2">Most of it</button>
-              <button class="q-btn" data-score="3">Some of it</button>
-              <button class="q-btn" data-score="4">Honestly, not really</button>
-            </div>
+<!-- SELF-ASSESSMENT -->
+<section id="assessment" class="section section-dark page">
+  <div class="container">
+    <div class="section-label">Configural Exploration</div>
+    <h2 class="section-title">Reflect on Your Preparation</h2>
+    <p class="section-intro">This is a reflective tool to visualize the tripartite configuration, not a validated instrument. Rate each dimension based on recent career prep.</p>
+    <div class="assessment-wrapper">
+      <div class="assess-dims">
+        <div class="assess-dim" id="assess-self">
+          <h4>Career Identity Formation</h4>
+          <p>How much of your career narrative is genuinely <em>yours</em> vs AI-generated?</p>
+          <div class="slider-row">
+            <span>Fully Mine</span>
+            <input type="range" min="1" max="10" value="5" class="assess-slider" id="slider-self" oninput="updateAssessment()">
+            <span>AI Authored</span>
           </div>
-          <div class="q-block" data-q="1">
-            <p class="q-dim">Dimension 2 — Others</p>
-            <h3 class="q-text">How many people in your professional life have seen you fail — and the relationship survived?</h3>
-            <div class="q-options">
-              <button class="q-btn" data-score="1">Several — these are my real colleagues</button>
-              <button class="q-btn" data-score="2">One or two</button>
-              <button class="q-btn" data-score="3">I keep struggle private</button>
-              <button class="q-btn" data-score="4">None I can think of</button>
-            </div>
+          <div class="slider-val" id="val-self">5</div>
+        </div>
+        <div class="assess-dim" id="assess-other">
+          <h4>Developmental Career Relatedness</h4>
+          <p>Are your relationships developmental (mentors) or purely transactional?</p>
+          <div class="slider-row">
+            <span>Developmental</span>
+            <input type="range" min="1" max="10" value="5" class="assess-slider" id="slider-other" oninput="updateAssessment()">
+            <span>Transactional</span>
           </div>
-          <div class="q-block" data-q="2">
-            <p class="q-dim">Dimension 3 — Purpose</p>
-            <h3 class="q-text">When you finish a workday, can you articulate — in your own words — why the work you did today mattered?</h3>
-            <div class="q-options">
-              <button class="q-btn" data-score="1">Yes, clearly</button>
-              <button class="q-btn" data-score="2">Usually, with some effort</button>
-              <button class="q-btn" data-score="3">Rarely</button>
-              <button class="q-btn" data-score="4">I've stopped asking</button>
-            </div>
+          <div class="slider-val" id="val-other">5</div>
+        </div>
+        <div class="assess-dim" id="assess-purpose">
+          <h4>Work-Purpose Clarity</h4>
+          <p>Is your career rationale values-grounded or market-optimised?</p>
+          <div class="slider-row">
+            <span>Values Grounded</span>
+            <input type="range" min="1" max="10" value="5" class="assess-slider" id="slider-purpose" oninput="updateAssessment()">
+            <span>Market Optimised</span>
           </div>
-          <div class="q-result hidden" id="assessResult">
-            <div class="result-icon" id="resultIcon"></div>
-            <h3 id="resultTitle"></h3>
-            <p id="resultText"></p>
-            <div class="result-dims" id="resultDims"></div>
-            <div class="result-actions">
-              <button class="btn-primary" id="retakeBtn">Retake</button>
-              <button class="btn-ghost" data-page="toolkit">Explore the Toolkit &#8594;</button>
-            </div>
-          </div>
+          <div class="slider-val" id="val-purpose">5</div>
+        </div>
+      </div>
+      <div class="assess-result" id="assess-result">
+        <div class="result-chart" style="width: 100%; max-width: 250px; margin: 0 auto;">
+          <svg viewBox="0 0 200 200" id="triangle-svg" style="overflow: visible;">
+            <polygon id="triangle-bg" points="100,30 190,170 10,170" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+            <polygon id="triangle-fill" points="100,30 190,170 10,170" fill="rgba(139,92,246,0.2)" stroke="#8b5cf6" stroke-width="2"/>
+            <text x="100" y="20" text-anchor="middle" fill="#a78bfa" font-size="12">Identity</text>
+            <text x="195" y="185" text-anchor="end" fill="#34d399" font-size="12">Relatedness</text>
+            <text x="5" y="185" text-anchor="start" fill="#f59e0b" font-size="12">Purpose</text>
+          </svg>
+        </div>
+        <div id="result-text">
+          <h4>Your Pattern</h4>
+          <p id="result-desc">Adjust the sliders to see your configural profile.</p>
+          <div id="result-badge"></div>
         </div>
       </div>
     </div>
-    <div class="page-nav-row">
-      <button class="btn-ghost small" data-page="toolkit">&#8592; Toolkit</button>
-      <button class="btn-primary small" data-page="research">Next: Research &#8594;</button>
+    <div class="cta-banner mt-5">
+      <p>Practitioners: see how to formally assess clients using the intake protocol.</p>
+      <button class="hero-cta" onclick="showPage('screening')">View Screening Protocol</button>
     </div>
   </div>
-</div>
+</section>
 
-<!-- RESEARCH -->
-<div class="page" id="page-research">
-  <div class="page-inner">
-    <div class="page-header">
-      <span class="eyebrow">The Research</span>
-      <h2>Grounded in Theory.<br>Built for Practice.</h2>
+<!-- SCREENING PROTOCOL (NEW PAGE) -->
+<section id="screening" class="section page">
+  <div class="container">
+    <div class="section-label">Practitioner Tools</div>
+    <h2 class="section-title">Configural Screening Protocol</h2>
+    <p class="section-intro">A three-dimension rapid assessment designed for a 10–15 minute intake to identify likely Presence Gap cases before full assessment.</p>
+    
+    <div class="screening-box mb-5">
+      <div class="screening-header bg-self">
+        <h3>Dimension 1: Career Identity Formation</h3>
+      </div>
+      <div class="screening-body">
+        <p class="screening-q">"Walk me through one of the experiences on your résumé — not the bullet point, but what actually happened and what you took from it."</p>
+        <p class="screening-prompt">Follow-up: "What would you say is distinctive about how you approach that kind of work?"</p>
+        <p class="screening-q">"If your résumé disappeared and you had to describe yourself to an employer in your own words, what would you say?"</p>
+        <div class="scoring-flag"><strong>Flag:</strong> Responses indicating inability to narrate own experience or dependence on AI-authored text.</div>
+      </div>
     </div>
-    <div class="research-grid">
-      <div class="research-block">
-        <h3>Theoretical Foundations</h3>
-        <ul>
-          <li><strong>Career Construction Theory</strong> (Savickas, 2013) — Self-disconnection</li>
-          <li><strong>Relational-Cultural Theory</strong> (Miller &amp; Stiver, 1997) — Other-disconnection</li>
-          <li><strong>Psychology of Working Theory</strong> (Blustein, 2011) — Purpose-disconnection</li>
-          <li><strong>SCCT</strong> (Lent, Brown &amp; Hackett, 1994) — Mechanism lens</li>
+
+    <div class="screening-box mb-5">
+      <div class="screening-header bg-other">
+        <h3>Dimension 2: Developmental Career Relatedness</h3>
+      </div>
+      <div class="screening-body">
+        <p class="screening-q">"Tell me about a professional — a supervisor, mentor, or colleague — who has seen your actual work or heard you talk about your goals in your own words. What did they make of it?"</p>
+        <p class="screening-prompt">Probes whether a developmental relational encounter — not merely a transactional one — has occurred.</p>
+        <p class="screening-q">"Has anyone in your field given you feedback that changed how you think about your direction or your strengths?"</p>
+        <div class="scoring-flag"><strong>Flag:</strong> Absence of a developmental relational encounter; all connections described transactionally.</div>
+      </div>
+    </div>
+
+    <div class="screening-box mb-5">
+      <div class="screening-header bg-purpose">
+        <h3>Dimension 3: Work-Purpose Clarity</h3>
+      </div>
+      <div class="screening-body">
+        <p class="screening-q">"If you had two offers at the same salary and title, what would you use to choose between them?"</p>
+        <p class="screening-prompt">Probes whether the client has an internalised values framework or defaults to external criteria.</p>
+        <p class="screening-q">"What drew you to this field — not the practical reasons, but what actually interests you about the work itself?"</p>
+        <div class="scoring-flag"><strong>Flag:</strong> Defaults to external criteria without values engagement.</div>
+      </div>
+    </div>
+
+    <div class="cta-banner">
+      <p>Want to see this protocol in action?</p>
+      <button class="hero-cta" onclick="showPage('vignette')">Read the Mia Case Study</button>
+    </div>
+  </div>
+</section>
+
+<!-- MIA VIGNETTE -->
+<section id="vignette" class="section section-dark page">
+  <div class="container">
+    <div class="section-label">Case Study</div>
+    <h2 class="section-title">Meet Mia</h2>
+    <p class="section-intro">A 23-year-old first-generation student referred after two unsuccessful final-round interviews. She presents with a polished AI-generated résumé and apparent interview anxiety.</p>
+    <div class="vignette-flow">
+      <div class="vignette-steps">
+        <button class="vign-step active" onclick="setVign(0)">Initial Presentation</button>
+        <button class="vign-step" onclick="setVign(1)">Identity Probe</button>
+        <button class="vign-step" onclick="setVign(2)">Relatedness Probe</button>
+        <button class="vign-step" onclick="setVign(3)">Purpose Probe</button>
+        <button class="vign-step" onclick="setVign(4)">Configural Assessment</button>
+        <button class="vign-step" onclick="setVign(5)">Recovery Plan</button>
+      </div>
+      <div class="vignette-panel">
+        <div class="vign-content active" id="vign-0">
+          <h3>Initial Presentation</h3>
+          <p>Initial presentation suggests interview anxiety or inexperience. However, Mia engages warmly in the unscripted counselling conversation, ruling out dispositional social anxiety. The difficulty is career-context-specific.</p>
+        </div>
+        <div class="vign-content" id="vign-1">
+          <h3>Career Identity Probe</h3>
+          <div class="vign-question">"Walk me through one of those experiences — not the bullet point, the moment itself."</div>
+          <p>Mia cannot narrate two of four listed positions. CAAS concern and curiosity: lower tertile.</p>
+        </div>
+        <div class="vign-content" id="vign-2">
+          <h3>Relatedness Probe</h3>
+          <div class="vign-question">"Tell me about a professional relationship that changed how you think about your work."</div>
+          <p>Mia describes both supervisors transactionally — tasks, deliverables, references. No moment of genuine encounter. RHI mentor subscale: lower tertile.</p>
+        </div>
+        <div class="vign-content" id="vign-3">
+          <h3>Purpose Probe</h3>
+          <div class="vign-question">"If you had two equal offers, what would you use to choose?"</div>
+          <p>Mia defaults to benefits; chose her field because "it pays well and my professor said it's a good fit." MLQ-P and DWS: lower tertile.</p>
+        </div>
+        <div class="vign-content" id="vign-4">
+          <h3>Configural Assessment & Differential Diagnosis</h3>
+          <p>Full Presence Gap configuration confirmed. AI-use mode: consistently substitutive. The counsellor notes this was a rational equity strategy for a first-generation student lacking social capital.</p>
+          <div class="vign-highlight">A higher-SES student using AI for efficiency presents with an identical configural profile and requires the same recovery work. The identification does not pathologise the choice; it names the developmental work needed.</div>
+        </div>
+        <div class="vign-content" id="vign-5">
+          <h3>Intervention: Mode 1 to Mode 3 Migration</h3>
+          <p>The goal is not to withdraw AI but to migrate to Mode 3.</p>
+          <ul class="recovery-list">
+            <li><strong>Identity:</strong> Handwritten free-write about a résumé experience. Authentic passages become raw material. AI is used in Mode 3 to refine language while preserving content.</li>
+            <li><strong>Relatedness:</strong> Maps professional contacts using relational quality criteria. Identifies two for unscripted, in-person meetings.</li>
+            <li><strong>Purpose:</strong> Identifies the last time she felt genuinely absorbed in work to generate values-content.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cta-banner mt-5">
+      <p>Ready to test your knowledge?</p>
+      <button class="hero-cta" onclick="showPage('practitioner')">Try Practitioner Exercises</button>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTITIONER EXERCISES -->
+<section id="practitioner" class="section page">
+  <div class="container">
+    <div class="section-label">Practitioner Training</div>
+    <h2 class="section-title">Configural Intake Exercises</h2>
+    <p class="section-intro">Four interactive exercises to develop your configural intake and intervention skills.</p>
+    <div class="ex-tabs">
+      <button class="ex-tab active" onclick="setExercise(0)">Ex 1: Classify</button>
+      <button class="ex-tab" onclick="setExercise(1)">Ex 2: Formulate</button>
+      <button class="ex-tab" onclick="setExercise(2)">Ex 3: Match Strategy</button>
+      <button class="ex-tab" onclick="setExercise(3)">Ex 4: AI Mode Assessment</button>
+    </div>
+
+    <!-- EXERCISE 1 -->
+    <div class="exercise active" id="ex-0">
+      <div class="ex-header">
+        <h3>Exercise 1 — Classify the Statement</h3>
+        <p>Click the dimension the statement most directly indicates.</p>
+      </div>
+      <div class="classify-game" id="classify-game">
+        <div class="classify-statement" id="classify-stmt"></div>
+        <div class="classify-opts">
+          <button class="classify-btn btn-self" onclick="classifyAnswer('self')">Identity Formation</button>
+          <button class="classify-btn btn-other" onclick="classifyAnswer('other')">Relatedness</button>
+          <button class="classify-btn btn-purpose" onclick="classifyAnswer('purpose')">Work-Purpose</button>
+        </div>
+        <div class="classify-feedback" id="classify-feedback"></div>
+        <div class="classify-nav">
+          <span class="classify-progress" id="classify-progress"></span>
+          <button class="ex-next-btn" id="classify-next" onclick="nextClassify()" style="display:none">Next &rarr;</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXERCISE 2 -->
+    <div class="exercise" id="ex-1">
+      <div class="ex-header">
+        <h3>Exercise 2 — Build the Formulation</h3>
+        <p>Score each dimension based on the case, then select the diagnosis.</p>
+      </div>
+      <div class="formulation-game">
+        <div class="formulation-case">
+          <p><strong>Jordan, 26.</strong> Extensive LinkedIn with detailed project write-ups he can explain perfectly. Networks actively but describes contacts as "useful" or "not yet useful." Target industry chosen because it was "highest-growth." No mentors.</p>
+        </div>
+        <div class="formulation-inputs">
+          <div class="form-input-row">
+            <label class="form-label form-label-self">Career Identity</label>
+            <input type="number" min="1" max="10" id="form-self" class="form-score-input" oninput="checkFormulation()">
+          </div>
+          <div class="form-input-row">
+            <label class="form-label form-label-other">Relatedness</label>
+            <input type="number" min="1" max="10" id="form-other" class="form-score-input" oninput="checkFormulation()">
+          </div>
+          <div class="form-input-row">
+            <label class="form-label form-label-purpose">Work-Purpose</label>
+            <input type="number" min="1" max="10" id="form-purpose" class="form-score-input" oninput="checkFormulation()">
+          </div>
+        </div>
+        <div class="formulation-choices" id="formulation-choices" style="display:none">
+          <button class="form-choice-btn" onclick="selectFormulation(0)">Full Presence Gap</button>
+          <button class="form-choice-btn" onclick="selectFormulation(1)">Partial: Relatedness + Purpose</button>
+        </div>
+        <div class="form-feedback" id="form-feedback"></div>
+      </div>
+    </div>
+
+    <!-- EXERCISE 3 -->
+    <div class="exercise" id="ex-2">
+      <div class="ex-header">
+        <h3>Exercise 3 — Match the Recovery Strategy</h3>
+        <p>Click a strategy, then click its target dimension.</p>
+      </div>
+      <div class="match-game">
+        <div class="match-strategies" id="match-strategies">
+          <div class="match-card" id="mc-0" onclick="selectCard(0)">Handwritten free-write about résumé experience</div>
+          <div class="match-card" id="mc-1" onclick="selectCard(1)">Unscripted low-stakes coffee meeting</div>
+          <div class="match-card" id="mc-2" onclick="selectCard(2)">Identify moments of genuine work absorption</div>
+        </div>
+        <div class="match-zones">
+          <div class="match-zone zone-self" onclick="dropToZone('self')">Identity</div>
+          <div class="match-zone zone-other" onclick="dropToZone('other')">Relatedness</div>
+          <div class="match-zone zone-purpose" onclick="dropToZone('purpose')">Purpose</div>
+        </div>
+        <div class="match-actions">
+          <button class="ex-next-btn" onclick="checkMatching()">Check answers</button>
+        </div>
+        <div class="match-feedback" id="match-feedback"></div>
+      </div>
+    </div>
+
+    <!-- EXERCISE 4 -->
+    <div class="exercise" id="ex-3">
+      <div class="ex-header">
+        <h3>Exercise 4 — Mode Assessment</h3>
+        <p>Identify if the client is using Mode 1, 2, or 3.</p>
+      </div>
+      <div class="mode-game">
+        <p id="mode-stmt">"I have a conversation with ChatGPT about what I want to say, then I open a blank Word doc and type it myself."</p>
+        <div class="mode-opts">
+          <button class="mode-btn" onclick="checkModeEx(1)">Mode 1 (Substitutive)</button>
+          <button class="mode-btn" onclick="checkModeEx(2)">Mode 2 (Iterative)</button>
+          <button class="mode-btn" onclick="checkModeEx(3)">Mode 3 (Dialogic)</button>
+        </div>
+        <div class="mode-feedback" id="mode-feedback"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH & PROPOSITIONS -->
+<section id="research" class="section section-dark page">
+  <div class="container">
+    <div class="section-label">Empirical Testing Strategy</div>
+    <h2 class="section-title">Three Formal Propositions</h2>
+    <p class="section-intro">The Presence Gap framework is falsifiable. Here is how it is structured for empirical testing.</p>
+    <div class="props-list">
+
+      <div class="prop-item prop-card">
+        <span class="prop-num prop-num-1">P1</span>
+        <div class="prop-body">
+          <h3>Substitutive AI Use Predicts Presence Gap</h3>
+          <p>Substitutive AI use in career preparation will be positively associated with Presence Gap membership, controlling for overall AI-use frequency, SES, and access to career guidance.</p>
+          <div class="prop-meta">
+            <button class="prop-falsify-btn" onclick="toggleFalsify('f1')">Falsification condition &#8595;</button>
+          </div>
+          <div class="prop-falsify" id="f1">
+            If a well-powered study finds no mode-dependent differences in tripartite co-occurrence rates, P1 is disconfirmed.
+          </div>
+        </div>
+      </div>
+
+      <div class="prop-item prop-card">
+        <span class="prop-num prop-num-2">P2</span>
+        <div class="prop-body">
+          <h3>Incremental Predictive Validity over Additive Deficits</h3>
+          <p>Presence Gap membership will predict early-career outcomes (job satisfaction, unscripted performance, time-to-first-mentor) above and beyond the additive effects of its three component dimensions. <em>Subsidiary: This is mediated by Work Volition.</em></p>
+          <div class="prop-meta">
+            <button class="prop-falsify-btn" onclick="toggleFalsify('f2')">Falsification condition &#8595;</button>
+          </div>
+          <div class="prop-falsify" id="f2">
+            If individuals with the full tripartite configuration show outcome profiles equivalent to matched individuals with asymmetric deficit profiles, the configural claim is disconfirmed.
+          </div>
+        </div>
+      </div>
+
+      <div class="prop-item prop-card">
+        <span class="prop-num prop-num-3">P3</span>
+        <div class="prop-body">
+          <h3>Mediation and Moderation by Recovery Resources</h3>
+          <p>The relationship between substitutive AI use and early-career outcomes is mediated by Presence Gap membership and moderated by access to developmental recovery resources (mentoring, counselling). Interventions shifting users from Mode 1 to Mode 3 will reduce PG indicators over 6 months.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="about">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>The Presence Gap</h4>
+        <p>A conceptual manuscript for <em>Career Development International</em>. Version 10i.</p>
+      </div>
+      <div>
+        <h4>Theoretical Architecture</h4>
+        <ul class="footer-list">
+          <li>Career Construction Theory (CCT)</li>
+          <li>Developmental Network Theory (DNT)</li>
+          <li>Psychology of Working Theory (PWT)</li>
+          <li>Social Cognitive Career Theory (SCCT)</li>
         </ul>
       </div>
-      <div class="research-block">
-        <h3>Interim Psychometric Proxies</h3>
-        <ul>
-          <li><strong>CAAS</strong> — Career Adapt-Abilities Scale (self-disconnection)</li>
-          <li><strong>RHI</strong> — Relational Health Indices (other-disconnection)</li>
-          <li><strong>MLQ / DWS</strong> — Meaning in Life / Decent Work Scale (purpose)</li>
-          <li><strong>CDSE-SF</strong> — Career Decision-Making Self-Efficacy (SCCT mechanism)</li>
-        </ul>
-      </div>
-      <div class="research-block">
-        <h3>Two Testable Propositions</h3>
-        <p><strong>P1:</strong> Perceived employability correlates more strongly with authentic relational presence than with technical proficiency as AI adoption increases.</p>
-        <p><strong>P2:</strong> The Presence Gap negatively moderates the relationship between technical competence and organizational career outcomes via SCCT self-efficacy deprivation.</p>
-      </div>
-      <div class="research-block">
-        <h3>Publication</h3>
-        <p>Submitted to the <em>Journal of Career Development</em>.</p>
-        <p class="research-version">Version 5A &bull; 2026</p>
-        <p class="kw-line">Presence Gap &bull; Essential Human Core &bull; Generative AI &bull; Career Development &bull; Digital Overload</p>
-      </div>
     </div>
-    <div class="footer-note-block">
-      <p>A generative AI assistant was used as a thinking partner for idea organization and language refinement during the preparation of this manuscript. All conceptual content, theoretical argument, and final wording are the author's.</p>
-      <p class="footer-copy">&copy; 2026 Marc Weinstein. All rights reserved.</p>
-    </div>
-    <div class="page-nav-row">
-      <button class="btn-ghost small" data-page="assess">&#8592; Self-Check</button>
-      <button class="btn-primary small" data-page="home">&#8593; Back to Home</button>
+    <div class="footer-bottom">
+      <p>A generative AI assistant was used in dialogic-scaffolding mode during manuscript preparation. No AI system generated theoretical claims.</p>
     </div>
   </div>
-</div>
+</footer>
 
-</div><!-- end pageWrapper -->
-
-<!-- PAGE INDICATOR -->
-<div id="pageIndicator">
-  <span id="pageLabel"></span>
-  <div id="pageDots">
-    <button class="dot active" data-page="home" title="Home"></button>
-    <button class="dot" data-page="problem" title="The Problem"></button>
-    <button class="dot" data-page="dimensions" title="Dimensions"></button>
-    <button class="dot" data-page="ehc" title="Essential Human Core"></button>
-    <button class="dot" data-page="toolkit" title="Toolkit"></button>
-    <button class="dot" data-page="assess" title="Self-Check"></button>
-    <button class="dot" data-page="research" title="Research"></button>
-  </div>
-</div>
-
-<script src="app.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
