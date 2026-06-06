@@ -6,7 +6,7 @@
 <title>The Presence Gap — A Tripartite Framework for Career Preparation in the AI Era</title>
 <meta name="description" content="An interactive exploration of the Presence Gap: the tripartite disconnection from identity, others, and purpose that generative AI amplifies in career preparation.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
 /* Critical: hide all pages immediately before external CSS loads */
@@ -21,12 +21,16 @@
 <nav id="navbar">
   <div class="nav-inner">
     <span class="nav-logo" onclick="showPage('hero')">Presence Gap</span>
+    <button class="nav-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu">
+      <span>☰</span>
+    </button>
     <ul class="nav-links">
       <li><a href="#" class="nav-link active" data-page="hero">Home</a></li>
       <li><a href="#" class="nav-link" data-page="framework">Framework</a></li>
       <li><a href="#" class="nav-link" data-page="dimensions">Dimensions</a></li>
       <li><a href="#" class="nav-link" data-page="theory">Theory</a></li>
       <li><a href="#" class="nav-link" data-page="ai-modes">AI Modes</a></li>
+      <li><a href="#" class="nav-link" data-page="equity-culture">Equity & Culture</a></li>
       <li><a href="#" class="nav-link" data-page="assessment">Self-Assessment</a></li>
       <li><a href="#" class="nav-link" data-page="screening">Screening</a></li>
       <li><a href="#" class="nav-link" data-page="practitioner">Practitioner</a></li>
@@ -39,7 +43,7 @@
 <section id="hero" class="page active">
   <div class="hero-bg"></div>
   <div class="hero-content">
-    <p class="hero-eyebrow">Career Development International · Conceptual Framework Version 10i</p>
+    <p class="hero-eyebrow">Career Development International · Draft Manuscript 6-6-26c</p>
     <h1 class="hero-title">The <em>Presence Gap</em></h1>
     <p class="hero-sub">A tripartite theoretical framework for career identity formation, developmental career relatedness, and work-purpose clarity in the age of generative artificial intelligence.</p>
     <div class="hero-pills">
@@ -182,7 +186,7 @@
       <div class="theory-block">
         <h3>Career Construction Theory (CCT)</h3>
         <p><strong>Focus:</strong> Career Identity Formation</p>
-        <p>CCT (Savickas, 2013) holds that career identity is built through the recursive, effortful process of narrating vocational experience. Career adaptability is the psychosocial infrastructure through which this construction occurs. AI bypasses the creation of "provisional selves" (Ibarra, 1999) needed to build stable identity.</p>
+        <p>CCT (Savickas, 2013, 2019) holds that career identity is built through the recursive, effortful process of narrating vocational experience. Career adaptability is the psychosocial infrastructure through which this construction occurs. AI bypasses the creation of "provisional selves" (Ibarra, 1999) needed to build stable identity.</p>
       </div>
       <div class="theory-block">
         <h3>Developmental Network Theory (DNT)</h3>
@@ -197,7 +201,7 @@
       <div class="theory-block">
         <h3>Social Cognitive Career Theory (SCCT)</h3>
         <p><strong>Focus:</strong> Linking Mechanism</p>
-        <p>SCCT (Lent et al., 1994) explains the distinctive vulnerability. Substitutive AI deprives users of <em>performance accomplishments</em> (mastery experiences) and impairs <em>physiological arousal management</em> (unscripted encounters). The tripartite configuration is uniquely devastating because the lack of work-purpose removes the motivation to recover the other two deficits.</p>
+        <p>SCCT (Lent et al., 1994; Lent & Brown, 2013) specifies that self-efficacy flows through four sources: performance accomplishments, vicarious learning, social persuasion, and physiological arousal management. Substitutive AI use deprives candidates of the two most powerful: <strong>performance accomplishments</strong> (lost when AI generates the artifact) and <strong>physiological arousal management</strong> (lost when candidates avoid unscripted prep). The configural co-occurrence is uniquely devastating because a lack of work-purpose removes the motivation needed to rebuild identity and networks.</p>
       </div>
     </div>
     <div class="cta-banner">
@@ -223,7 +227,7 @@
         <div class="mode-content active" id="mode-0">
           <div class="mode-risk risk-high">⚠ High Presence Gap Risk</div>
           <h3>Substitutive Ghostwriter</h3>
-          <p>AI generates the résumé, cover letter, or interview answers. The user reviews and edits but does not substantially author or reflect. Developmental work is bypassed. This mode removes reflective, relational, and values-clarifying career preparation work.</p>
+          <p>AI generates the résumé, cover letter, or interview answers. The user reviews and edits but does not substantially author or reflect. Developmental work is bypassed. This mode removes reflective, relational, and values-clarifying career preparation work. Leads to developmental non-reinvestment (saved time is offloaded, not redirected).</p>
           <button class="small-btn mt-4" onclick="showPage('practitioner')">How to intervene</button>
         </div>
         <div class="mode-content" id="mode-1">
@@ -234,8 +238,62 @@
         <div class="mode-content" id="mode-2">
           <div class="mode-risk risk-none">✦ Developmental Enhancement</div>
           <h3>Dialogic Scaffolding</h3>
-          <p>AI functions as a questioning partner—asking about experiences, values, and goals—helping the user surface content they then author independently. Developmental work is preserved and potentially enhanced.</p>
+          <p>AI functions as a questioning partner—asking about experiences, values, and goals—helping the user surface content they then author independently. Developmental work is preserved and potentially enhanced because the cognitive labor of articulation remains with the user.</p>
           <button class="small-btn mt-4" onclick="showPage('practitioner')">View Practitioner Tools</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EQUITY & CULTURAL BOUNDARY CONDITIONS -->
+<section id="equity-culture" class="section page">
+  <div class="container">
+    <div class="section-label">Equity & Culture</div>
+    <h2 class="section-title">Equity Paradox & Cultural Boundaries</h2>
+    <p class="section-intro">Generative AI presents unique equity opportunities and developmental risks, while the expression of the Presence Gap varies across cultural frameworks.</p>
+    
+    <div class="equity-grid">
+      <div class="equity-card text-card">
+        <div class="card-gradient-border bg-violet-emerald"></div>
+        <h3>The Equity Paradox</h3>
+        <p class="lead">Those who stand to gain the most from generative AI as a career-preparation equalizer may also bear the highest developmental costs when human support is unavailable.</p>
+        <p>For first-generation and lower-SES students, AI-assisted writing acts as an equalizer, providing access to professional self-presentation templates and the "tacit register" of the corporate market that more socially capitalized peers inherit. This access benefit is real and powerful.</p>
+        <p><strong>The paradox is sharp:</strong> when AI is used in substitutive mode (Mode 1) without mentoring or structured career services, it bypasses the reflection, network-building, and values-testing that actually build career readiness. The appropriate response is not restriction, but equity-conscious investment in developmental recovery infrastructure.</p>
+      </div>
+      
+      <div class="culture-wrap">
+        <h3>Cultural Boundary Conditions</h3>
+        <p class="mb-4">The developmental bypass mechanism is universal, but its expressions differ. The tripartite dimensions of the Presence Gap are culturally patterned:</p>
+        
+        <div class="culture-cards">
+          <div class="culture-card">
+            <div class="culture-header">
+              <span class="culture-tag">Western Individuation</span>
+            </div>
+            <p>Assumes an individualist, self-directed model of career identity formation. Deficits manifest as a lack of personal narrative ownership and individual career volition.</p>
+          </div>
+          
+          <div class="culture-card">
+            <div class="culture-header">
+              <span class="culture-tag">East Asian Guanxi</span>
+            </div>
+            <p>Identity is relationally embedded in networks blending affective and instrumental ties. The deficit manifests as a failure to build organic, network-embedded career positioning.</p>
+          </div>
+          
+          <div class="culture-card">
+            <div class="culture-header">
+              <span class="culture-tag">African Ubuntu</span>
+            </div>
+            <p>Centered on communal becoming ("I am because we are"). The relational deficit manifests as detachment from collective career-developmental structures rather than individual sponsors.</p>
+          </div>
+          
+          <div class="culture-card">
+            <div class="culture-header">
+              <span class="culture-tag">South Asian Hierarchy</span>
+            </div>
+            <p>Vocational purpose is shaped by family obligation and social hierarchy. The deficit manifests as an inability to integrate personal interest with collective obligations.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -285,16 +343,15 @@
         <div class="result-chart" style="width: 100%; max-width: 250px; margin: 0 auto;">
           <svg viewBox="0 0 200 200" id="triangle-svg" style="overflow: visible;">
             <polygon id="triangle-bg" points="100,30 190,170 10,170" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-            <polygon id="triangle-fill" points="100,30 190,170 10,170" fill="rgba(139,92,246,0.2)" stroke="#8b5cf6" stroke-width="2"/>
+            <polygon id="triangle-fill" points="100,123 100,123 100,123" fill="rgba(139,92,246,0.2)" stroke="#8b5cf6" stroke-width="2"/>
             <text x="100" y="20" text-anchor="middle" fill="#a78bfa" font-size="12">Identity</text>
             <text x="195" y="185" text-anchor="end" fill="#34d399" font-size="12">Relatedness</text>
             <text x="5" y="185" text-anchor="start" fill="#f59e0b" font-size="12">Purpose</text>
           </svg>
         </div>
         <div id="result-text">
-          <h4>Your Pattern</h4>
+          <div id="result-badge" class="assess-badge"></div>
           <p id="result-desc">Adjust the sliders to see your configural profile.</p>
-          <div id="result-badge"></div>
         </div>
       </div>
     </div>
@@ -305,7 +362,7 @@
   </div>
 </section>
 
-<!-- SCREENING PROTOCOL (NEW PAGE) -->
+<!-- SCREENING PROTOCOL -->
 <section id="screening" class="section page">
   <div class="container">
     <div class="section-label">Practitioner Tools</div>
@@ -350,16 +407,16 @@
 
     <div class="cta-banner">
       <p>Want to see this protocol in action?</p>
-      <button class="hero-cta" onclick="showPage('vignette')">Read the Mia Case Study</button>
+      <button class="hero-cta" onclick="showPage('vignette')">Read the Ana Case Study</button>
     </div>
   </div>
 </section>
 
-<!-- MIA VIGNETTE -->
+<!-- ANA VIGNETTE -->
 <section id="vignette" class="section section-dark page">
   <div class="container">
     <div class="section-label">Case Study</div>
-    <h2 class="section-title">Meet Mia</h2>
+    <h2 class="section-title">Meet Ana</h2>
     <p class="section-intro">A 23-year-old first-generation student referred after two unsuccessful final-round interviews. She presents with a polished AI-generated résumé and apparent interview anxiety.</p>
     <div class="vignette-flow">
       <div class="vignette-steps">
@@ -373,35 +430,35 @@
       <div class="vignette-panel">
         <div class="vign-content active" id="vign-0">
           <h3>Initial Presentation</h3>
-          <p>Initial presentation suggests interview anxiety or inexperience. However, Mia engages warmly in the unscripted counselling conversation, ruling out dispositional social anxiety. The difficulty is career-context-specific.</p>
+          <p>Initial presentation suggests interview anxiety or inexperience. However, Ana engages warmly in the unscripted counselling conversation, ruling out dispositional social anxiety. The difficulty is career-context-specific.</p>
         </div>
         <div class="vign-content" id="vign-1">
           <h3>Career Identity Probe</h3>
           <div class="vign-question">"Walk me through one of those experiences — not the bullet point, the moment itself."</div>
-          <p>Mia cannot narrate two of four listed positions. CAAS concern and curiosity: lower tertile.</p>
+          <p>Ana repeats the bullet point description but cannot narrate the lived experience or the decisions she made in specific terms. The artifact exists, but the career identity behind it has not yet been constructed. (CAAS concern and curiosity: lower tertile).</p>
         </div>
         <div class="vign-content" id="vign-2">
           <h3>Relatedness Probe</h3>
           <div class="vign-question">"Tell me about a professional relationship that changed how you think about your work."</div>
-          <p>Mia describes both supervisors transactionally — tasks, deliverables, references. No moment of genuine encounter. RHI mentor subscale: lower tertile.</p>
+          <p>Ana describes both supervisors transactionally — as people who assigned tasks or provided references. She has contacts, but not a developmental network. (RHI mentor subscale: lower tertile).</p>
         </div>
         <div class="vign-content" id="vign-3">
           <h3>Purpose Probe</h3>
           <div class="vign-question">"If you had two equal offers, what would you use to choose?"</div>
-          <p>Mia defaults to benefits; chose her field because "it pays well and my professor said it's a good fit." MLQ-P and DWS: lower tertile.</p>
+          <p>Ana defaults to benefits, location, and salary, and notes that she chose the field because her professor said it was a good fit. She cannot articulate an internalized, values-grounded rationale for the work itself. (MLQ-P and DWS: lower tertile).</p>
         </div>
         <div class="vign-content" id="vign-4">
           <h3>Configural Assessment & Differential Diagnosis</h3>
-          <p>Full Presence Gap configuration confirmed. AI-use mode: consistently substitutive. The counsellor notes this was a rational equity strategy for a first-generation student lacking social capital.</p>
+          <p>Full Presence Gap configuration confirmed. Ana's AI use was consistently substitutive, but also rational: it gave her access to a professional register that more socially capitalized peers may have inherited. The diagnosis does not pathologize the choice; it names the developmental work still required.</p>
           <div class="vign-highlight">A higher-SES student using AI for efficiency presents with an identical configural profile and requires the same recovery work. The identification does not pathologise the choice; it names the developmental work needed.</div>
         </div>
         <div class="vign-content" id="vign-5">
           <h3>Intervention: Mode 1 to Mode 3 Migration</h3>
           <p>The goal is not to withdraw AI but to migrate to Mode 3.</p>
           <ul class="recovery-list">
-            <li><strong>Identity:</strong> Handwritten free-write about a résumé experience. Authentic passages become raw material. AI is used in Mode 3 to refine language while preserving content.</li>
-            <li><strong>Relatedness:</strong> Maps professional contacts using relational quality criteria. Identifies two for unscripted, in-person meetings.</li>
-            <li><strong>Purpose:</strong> Identifies the last time she felt genuinely absorbed in work to generate values-content.</li>
+            <li><strong>Identity Formation:</strong> Ana writes a handwritten free-write about one résumé experience. AI is then used in Mode 3 (scaffolding) to refine the language, ensuring the core narrative remains her own.</li>
+            <li><strong>Developmental Relatedness:</strong> Maps contacts by the quality of support they provide, then plans and conducts two unscripted informational interviews.</li>
+            <li><strong>Work-Purpose Clarity:</strong> Identifies a moment of genuine absorption in academic or service work to surface internal motivations and core values.</li>
           </ul>
         </div>
       </div>
@@ -433,6 +490,7 @@
         <p>Click the dimension the statement most directly indicates.</p>
       </div>
       <div class="classify-game" id="classify-game">
+        <div class="classify-progress" id="classify-progress" style="margin-bottom:0.75rem; font-size:0.8rem; color:var(--muted)">Statement 1 of 6</div>
         <div class="classify-statement" id="classify-stmt"></div>
         <div class="classify-opts">
           <button class="classify-btn btn-self" onclick="classifyAnswer('self')">Identity Formation</button>
@@ -441,8 +499,7 @@
         </div>
         <div class="classify-feedback" id="classify-feedback"></div>
         <div class="classify-nav">
-          <span class="classify-progress" id="classify-progress"></span>
-          <button class="ex-next-btn" id="classify-next" onclick="nextClassify()" style="display:none">Next &rarr;</button>
+          <button class="ex-next-btn" id="classify-next" onclick="nextClassify()" style="display:none; margin-top: 1rem">Next &rarr;</button>
         </div>
       </div>
     </div>
@@ -460,15 +517,15 @@
         <div class="formulation-inputs">
           <div class="form-input-row">
             <label class="form-label form-label-self">Career Identity</label>
-            <input type="number" min="1" max="10" id="form-self" class="form-score-input" oninput="checkFormulation()">
+            <input type="number" min="1" max="10" placeholder="1-10" id="form-self" class="form-score-input" oninput="checkFormulation()">
           </div>
           <div class="form-input-row">
             <label class="form-label form-label-other">Relatedness</label>
-            <input type="number" min="1" max="10" id="form-other" class="form-score-input" oninput="checkFormulation()">
+            <input type="number" min="1" max="10" placeholder="1-10" id="form-other" class="form-score-input" oninput="checkFormulation()">
           </div>
           <div class="form-input-row">
             <label class="form-label form-label-purpose">Work-Purpose</label>
-            <input type="number" min="1" max="10" id="form-purpose" class="form-score-input" oninput="checkFormulation()">
+            <input type="number" min="1" max="10" placeholder="1-10" id="form-purpose" class="form-score-input" oninput="checkFormulation()">
           </div>
         </div>
         <div class="formulation-choices" id="formulation-choices" style="display:none">
@@ -496,10 +553,11 @@
           <div class="match-zone zone-other" onclick="dropToZone('other')">Relatedness</div>
           <div class="match-zone zone-purpose" onclick="dropToZone('purpose')">Purpose</div>
         </div>
-        <div class="match-actions">
+        <div class="match-actions" style="grid-column: span 2; display: flex; gap: 1rem; margin-top: 1rem;">
           <button class="ex-next-btn" onclick="checkMatching()">Check answers</button>
+          <button class="small-btn btn-ghost" onclick="resetMatching()">Reset</button>
         </div>
-        <div class="match-feedback" id="match-feedback"></div>
+        <div class="match-feedback" id="match-feedback" style="grid-column: span 2; margin-top: 1rem;"></div>
       </div>
     </div>
 
@@ -510,13 +568,17 @@
         <p>Identify if the client is using Mode 1, 2, or 3.</p>
       </div>
       <div class="mode-game">
+        <div class="classify-progress" id="mode-progress" style="margin-bottom:0.75rem; font-size:0.8rem; color:var(--muted)">Statement 1 of 3</div>
         <p id="mode-stmt">"I have a conversation with ChatGPT about what I want to say, then I open a blank Word doc and type it myself."</p>
         <div class="mode-opts">
-          <button class="mode-btn" onclick="checkModeEx(1)">Mode 1 (Substitutive)</button>
-          <button class="mode-btn" onclick="checkModeEx(2)">Mode 2 (Iterative)</button>
-          <button class="mode-btn" onclick="checkModeEx(3)">Mode 3 (Dialogic)</button>
+          <button class="mode-btn btn-self" onclick="checkModeEx(1)">Mode 1 (Substitutive)</button>
+          <button class="mode-btn btn-other" onclick="checkModeEx(2)">Mode 2 (Iterative)</button>
+          <button class="mode-btn btn-purpose" onclick="checkModeEx(3)">Mode 3 (Dialogic)</button>
         </div>
-        <div class="mode-feedback" id="mode-feedback"></div>
+        <div class="mode-feedback" id="mode-feedback" style="margin-top: 1.25rem; font-size: 0.9rem; line-height: 1.6;"></div>
+        <div class="classify-nav">
+          <button class="ex-next-btn" id="mode-next" onclick="nextModeEx()" style="display:none; margin-top: 1rem;">Next Statement &rarr;</button>
+        </div>
       </div>
     </div>
   </div>
@@ -525,44 +587,264 @@
 <!-- RESEARCH & PROPOSITIONS -->
 <section id="research" class="section section-dark page">
   <div class="container">
-    <div class="section-label">Empirical Testing Strategy</div>
-    <h2 class="section-title">Three Formal Propositions</h2>
-    <p class="section-intro">The Presence Gap framework is falsifiable. Here is how it is structured for empirical testing.</p>
-    <div class="props-list">
+    <div class="section-label">Empirical Testing & Scale Validation</div>
+    <h2 class="section-title">Research & Psychometrics</h2>
+    <p class="section-intro">Operationalizing the Presence Gap construct through psychometric scale development, undergraduate CURE design, and behavioral mock interviews.</p>
+    
+    <div class="research-tabs-wrapper">
+      <div class="research-tabs">
+        <button class="res-tab active" onclick="setResearchTab(0)">1. Propositions</button>
+        <button class="res-tab" onclick="setResearchTab(1)">2. Scale Items</button>
+        <button class="res-tab" onclick="setResearchTab(2)">3. Validation Index</button>
+        <button class="res-tab" onclick="setResearchTab(3)">4. CURE Design</button>
+        <button class="res-tab" onclick="setResearchTab(4)">5. Behavioral Interviews</button>
+      </div>
+    </div>
 
-      <div class="prop-item prop-card">
-        <span class="prop-num prop-num-1">P1</span>
-        <div class="prop-body">
-          <h3>Substitutive AI Use Predicts Presence Gap</h3>
-          <p>Substitutive AI use in career preparation will be positively associated with Presence Gap membership, controlling for overall AI-use frequency, SES, and access to career guidance.</p>
-          <div class="prop-meta">
-            <button class="prop-falsify-btn" onclick="toggleFalsify('f1')">Falsification condition &#8595;</button>
+    <!-- TAB 0: PROPOSITIONS -->
+    <div class="res-panel active" id="res-panel-0">
+      <div class="props-list">
+        <div class="prop-item prop-card">
+          <span class="prop-num prop-num-1">P1</span>
+          <div class="prop-body">
+            <h3>Substitutive AI Use Predicts Presence Gap</h3>
+            <p>Substitutive AI use in career preparation will be positively associated with Presence Gap membership, controlling for overall AI-use frequency, SES, and access to career guidance.</p>
+            <div class="prop-meta">
+              <button class="prop-falsify-btn" onclick="toggleFalsify('f1')">Falsification condition &#8595;</button>
+            </div>
+            <div class="prop-falsify" id="f1">
+              If a well-powered study finds no mode-dependent differences in tripartite co-occurrence rates, P1 is disconfirmed.
+            </div>
           </div>
-          <div class="prop-falsify" id="f1">
-            If a well-powered study finds no mode-dependent differences in tripartite co-occurrence rates, P1 is disconfirmed.
+        </div>
+
+        <div class="prop-item prop-card">
+          <span class="prop-num prop-num-2">P2</span>
+          <div class="prop-body">
+            <h3>Incremental Predictive Validity over Additive Deficits</h3>
+            <p>Presence Gap membership will predict early-career outcomes (job satisfaction, unscripted performance, time-to-first-mentor) above and beyond the additive effects of its three component dimensions. <em>Subsidiary: This is mediated by Work Volition.</em></p>
+            <div class="prop-meta">
+              <button class="prop-falsify-btn" onclick="toggleFalsify('f2')">Falsification condition &#8595;</button>
+            </div>
+            <div class="prop-falsify" id="f2">
+              If individuals with the full tripartite configuration show outcome profiles equivalent to matched individuals with asymmetric deficit profiles, the configural claim is disconfirmed.
+            </div>
+          </div>
+        </div>
+
+        <div class="prop-item prop-card">
+          <span class="prop-num prop-num-3">P3</span>
+          <div class="prop-body">
+            <h3>Mediation and Moderation by Recovery Resources</h3>
+            <p>The relationship between substitutive AI use and early-career outcomes is mediated by Presence Gap membership and moderated by access to developmental recovery resources (mentoring, counselling). Interventions shifting users from Mode 1 to Mode 3 will reduce PG indicators over 6 months.</p>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="prop-item prop-card">
-        <span class="prop-num prop-num-2">P2</span>
-        <div class="prop-body">
-          <h3>Incremental Predictive Validity over Additive Deficits</h3>
-          <p>Presence Gap membership will predict early-career outcomes (job satisfaction, unscripted performance, time-to-first-mentor) above and beyond the additive effects of its three component dimensions. <em>Subsidiary: This is mediated by Work Volition.</em></p>
-          <div class="prop-meta">
-            <button class="prop-falsify-btn" onclick="toggleFalsify('f2')">Falsification condition &#8595;</button>
-          </div>
-          <div class="prop-falsify" id="f2">
-            If individuals with the full tripartite configuration show outcome profiles equivalent to matched individuals with asymmetric deficit profiles, the configural claim is disconfirmed.
-          </div>
+    <!-- TAB 1: SCALE ITEMS -->
+    <div class="res-panel" id="res-panel-1">
+      <h3>PGS & ACUMS Draft Scales</h3>
+      <p class="section-intro" style="margin-bottom:1rem">A 36-item continuous self-report instrument rated on a 7-point Likert scale, alongside a 12-item AI Career-Use Mode Scale to measure automations.</p>
+      
+      <table class="research-table">
+        <thead>
+          <tr>
+            <th>Scale / Subscale</th>
+            <th>Theoretical Anchor</th>
+            <th>Representative Draft Survey Item</th>
+            <th>Operational Target</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>PGS: Career Identity Formation</strong></td>
+            <td><span class="table-tag tag-cct">CCT</span></td>
+            <td>"I struggle to describe my professional experiences without using language generated by AI."</td>
+            <td>Over-reliance on automated self-narratives</td>
+          </tr>
+          <tr>
+            <td><strong>PGS: Career Identity Formation</strong></td>
+            <td><span class="table-tag tag-cct">CCT</span></td>
+            <td>"The professional achievements on my résumé feel like they belong to someone else."</td>
+            <td>Alienation from self-presentation; lack of ownership</td>
+          </tr>
+          <tr>
+            <td><strong>PGS: Career Identity Formation</strong></td>
+            <td><span class="table-tag tag-cct">CCT</span></td>
+            <td>"I feel unprepared to explain the specific steps of my past projects during an unscripted conversation."</td>
+            <td>Deficit in narrative control & adaptability</td>
+          </tr>
+          <tr>
+            <td><strong>PGS: Developmental Relatedness</strong></td>
+            <td><span class="table-tag tag-dnt">DNT</span></td>
+            <td>"I use AI-generated messages to reach out to professionals because I do not know how to start those conversations myself."</td>
+            <td>Automation of relational initiations</td>
+          </tr>
+          <tr>
+            <td><strong>PGS: Developmental Relatedness</strong></td>
+            <td><span class="table-tag tag-dnt">DNT</span></td>
+            <td>"I would rather ask an AI tool for career advice than speak with a mentor or university counselor."</td>
+            <td>Substitution of tools for human encounters</td>
+          </tr>
+          <tr>
+            <td><strong>PGS: Developmental Relatedness</strong></td>
+            <td><span class="table-tag tag-dnt">DNT</span></td>
+            <td>"I lack a network of real people who can advocate for my professional capabilities."</td>
+            <td>Deficit in strong ties & social capital</td>
+          </tr>
+          <tr>
+            <td><strong>PGS: Work-Purpose Clarity</strong></td>
+            <td><span class="table-tag tag-pwt">PWT</span></td>
+            <td>"I choose career paths based on automated suggestions rather than my own personal values."</td>
+            <td>External anchoring of career direction</td>
+          </tr>
+          <tr>
+            <td><strong>PGS: Work-Purpose Clarity</strong></td>
+            <td><span class="table-tag tag-pwt">PWT</span></td>
+            <td>"I find it difficult to explain why my targeted industry matters to me on a personal level."</td>
+            <td>Deficit in internalized meaning & vocation</td>
+          </tr>
+          <tr>
+            <td><strong>PGS: Work-Purpose Clarity</strong></td>
+            <td><span class="table-tag tag-pwt">PWT</span></td>
+            <td>"I struggle to identify what kind of contribution I want to make through my future work."</td>
+            <td>Low self-determination & values clarity</td>
+          </tr>
+          <tr>
+            <td><strong>ACUMS: Mode 1 (Substitutive)</strong></td>
+            <td><span class="table-tag tag-mode1">Mode 1</span></td>
+            <td>"I copy and paste job descriptions and my raw details into AI, using the generated text directly for my applications."</td>
+            <td>Automated generation and offloading</td>
+          </tr>
+          <tr>
+            <td><strong>ACUMS: Mode 2 (Iterative)</strong></td>
+            <td><span class="table-tag tag-mode2">Mode 2</span></td>
+            <td>"I write my own drafts first and then ask AI to critique my arguments and suggest revisions."</td>
+            <td>Iterative feedback with active authorship</td>
+          </tr>
+          <tr>
+            <td><strong>ACUMS: Mode 3 (Dialogic)</strong></td>
+            <td><span class="table-tag tag-mode3">Mode 3</span></td>
+            <td>"I use AI as a conversational partner to help me brainstorm and talk through my personal experiences."</td>
+            <td>Dialogic scaffolding of reflection</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- TAB 2: VALIDATION INDEX -->
+    <div class="res-panel" id="res-panel-2">
+      <h3>Content Validity & Quantitative Fit Standards</h3>
+      <p class="section-intro" style="margin-bottom:1.5rem">To test the scale, the research team runs expert validity reviews and cross-sectional EFA/CFA quantitative fitting models.</p>
+      
+      <div class="formulas-grid">
+        <div class="formula-card">
+          <h4>Item-Level CVI (I-CVI)</h4>
+          <code>I-CVI = A / N</code>
+          <p>Proportion of experts rating an item as "relevance 3 or 4" (quite/highly relevant). Threshold: <strong>I-CVI &ge; 0.78</strong> (for 8 experts) is required to retain the item.</p>
+        </div>
+        <div class="formula-card">
+          <h4>Modified Kappa (K*)</h4>
+          <code>K* = (I-CVI - Pc) / (1 - Pc)</code>
+          <p>Adjusts Item CVI for chance agreement probability (Pc). A value of <strong>K* &ge; 0.75</strong> is classified as "Excellent" and required for inclusion.</p>
+        </div>
+        <div class="formula-card">
+          <h4>Scale CVI Average (S-CVI/Avg)</h4>
+          <code>S-CVI/Avg = &Sigma;(I-CVI) / K</code>
+          <p>Average of all item CVI values in a subscale. Threshold: <strong>S-CVI/Avg &ge; 0.90</strong> indicates robust scale-level validity.</p>
+        </div>
+        <div class="formula-card">
+          <h4>Aiken's V Index</h4>
+          <code>V = S / [n * (c - 1)]</code>
+          <p>Validates item quality using the full ordinal rating scale (rather than dichotomizing). Retention target: <strong>V &ge; 0.75</strong>.</p>
         </div>
       </div>
 
-      <div class="prop-item prop-card">
-        <span class="prop-num prop-num-3">P3</span>
-        <div class="prop-body">
-          <h3>Mediation and Moderation by Recovery Resources</h3>
-          <p>The relationship between substitutive AI use and early-career outcomes is mediated by Presence Gap membership and moderated by access to developmental recovery resources (mentoring, counselling). Interventions shifting users from Mode 1 to Mode 3 will reduce PG indicators over 6 months.</p>
+      <div class="cure-intro" style="margin-top:2rem">
+        <h4>Quantitative Factor Analysis & Fit Cutoffs</h4>
+        <p style="font-size:0.88rem; color:var(--muted); line-height:1.6">Once surveyed (Target developmental sample <strong>N &ge; 480 completed observations</strong>), items with poor variance (SD &lt; 1) or low item-total correlation (r &lt; 0.30) are pruned. The psychometrics team runs promax rotated <strong>Exploratory Factor Analysis (EFA)</strong>, followed by <strong>Confirmatory Factor Analysis (CFA)</strong> using Mplus, validating fit against standard cutoffs: <strong>RMSEA &le; 0.06</strong>, <strong>TLI &ge; 0.95</strong>, <strong>CFI &ge; 0.95</strong>, and <strong>SRMR &le; 0.08</strong>.</p>
+      </div>
+    </div>
+
+    <!-- TAB 3: CURE DESIGN -->
+    <div class="res-panel" id="res-panel-3">
+      <h3>Course-Based Undergraduate Research Experience (CURE)</h3>
+      <div class="cure-intro">
+        <p>This project is modeled as a low-intensity, hybrid CURE design that combines the supportive tiered infrastructure of a traditional research lab apprenticeship (ATURE) with the collaborative and scalable classroom environment of a CURE. Anchored in Gelso's Research Training Environment (RTE) model to maximize student research self-efficacy.</p>
+      </div>
+      
+      <div class="cure-teams-grid">
+        <div class="cure-team-card">
+          <h4>1. Item Construction & Validation</h4>
+          <p>Responsible for generating initial deductive theoretical items, qualitative inductive student focus group items, managing the 8-expert review panel, and calculating the content validity indices (CVI/Kappa).</p>
+        </div>
+        <div class="cure-team-card">
+          <h4>2. Cognitive Interviewing & Qualitative Team</h4>
+          <p>Executes Tourangeau's 4-stage processing model (Comprehension, Retrieval, Judgment, Response) across 15 peer interviews (3 sequential rounds), coding transcript behavior errors to refine wording.</p>
+        </div>
+        <div class="cure-team-card">
+          <h4>3. Survey Operations & Psychometrics Team</h4>
+          <p>Coordinates digital deployment, data cleaning (managing missing values with '999' labels), runs EFA and CFA fit indices, and models Latent Profile Analysis (LPA) to isolate the Presence Gap profile.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: BEHAVIORAL INTERVIEWS -->
+    <div class="res-panel" id="res-panel-4">
+      <h3>Behavioral Validation: Mock Interview Protocol</h3>
+      <p class="section-intro" style="margin-bottom:1.5rem">To avoid self-report bias, 80 students (40 Presence Gap Profile vs 40 Aligned Profile) participate in structured mock interviews. Evaluators are masked to their self-report profile.</p>
+      
+      <div class="formulas-grid" style="margin-bottom:2rem">
+        <div class="formula-card" style="border-left:4px solid var(--self)">
+          <h4>Prepared / Scripted Phase</h4>
+          <p>Standard questions provided 48 hours in advance (e.g. "Walk me through your résumé"). Allows substitutive users to present highly structured, pre-packaged AI-generated responses.</p>
+        </div>
+        <div class="formula-card" style="border-left:4px solid var(--emerald)">
+          <h4>Unscripted Follow-Up Phase</h4>
+          <p>Spontaneous, behavioral follow-ups (e.g. "Tell me about a time you led through real uncertainty, and what that actually felt like"). Bypasses rehearsed scripts to evaluate true adaptability.</p>
+        </div>
+        <div class="formula-card" style="border-left:4px solid var(--amber)">
+          <h4>Performance Drop Formula</h4>
+          <code>Performance Drop = Prepared Score - Unscripted Score</code>
+          <p>Evaluated using the Mock Interview Rating Scale (MIRS). Hypothesized: The Presence Gap LPA class will show a significantly larger Performance Drop compared to the Aligned class.</p>
+        </div>
+      </div>
+
+      <h4>Mock Interview Rating Scale (MIRS) Coding Rubric</h4>
+      <p class="mb-4">Evaluation across 8 metrics (Anxiety, Dependability, Collaboration, Experience sharing, Vocation interest, Authenticity, Professionalism, Rapport):</p>
+
+      <div class="rubric-cards">
+        <div class="rubric-card rubric-self">
+          <div class="culture-card" style="background:none; border:none; padding:1rem">
+            <div class="culture-header"><span class="culture-tag" style="color:var(--self)">Narrative Fluency & Coherence</span></div>
+            <p><strong>Underperforming (1-2):</strong> Defaults to highly structured, generic, or canned language. Freezes or struggles when asked for detail.</p>
+            <p style="margin-top:0.35rem"><strong>Exemplary (5):</strong> Smoothly transitions to personalized, contextual self-narratives. Articulates specific personal lessons.</p>
+          </div>
+        </div>
+        
+        <div class="rubric-card rubric-other">
+          <div class="culture-card" style="background:none; border:none; padding:1rem">
+            <div class="culture-header"><span class="culture-tag" style="color:var(--other)">Authenticity & Self-Reflective Depth</span></div>
+            <p><strong>Underperforming (1-2):</strong> Focuses solely on superficial details; cannot explain underlying motivation or values of past work.</p>
+            <p style="margin-top:0.35rem"><strong>Exemplary (5):</strong> High self-awareness. Discusses setbacks, emotional self-regulation, and internal values with honesty.</p>
+          </div>
+        </div>
+
+        <div class="rubric-card rubric-purpose">
+          <div class="culture-card" style="background:none; border:none; padding:1rem">
+            <div class="culture-header"><span class="culture-tag" style="color:var(--purpose)">Relational Adaptability</span></div>
+            <p><strong>Underperforming (1-2):</strong> Shows high anxiety when interrupted. Avoids eye contact and fails to build rapport.</p>
+            <p style="margin-top:0.35rem"><strong>Exemplary (5):</strong> Exhibits active listening, adapts tone, and naturally builds rapport with the interviewer.</p>
+          </div>
+        </div>
+
+        <div class="rubric-card rubric-mode1">
+          <div class="culture-card" style="background:none; border:none; padding:1rem">
+            <div class="culture-header"><span class="culture-tag" style="color:var(--red)">Vocal Confidence & Physiological Regulation</span></div>
+            <p><strong>Underperforming (1-2):</strong> Demonstrates vocal tremors, long pauses, and signs of panic (fidgeting, rapid breathing).</p>
+            <p style="margin-top:0.35rem"><strong>Exemplary (5):</strong> Modulates vocal pitch, maintains calm, deliberate breathing, and uses pause time strategically.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -575,7 +857,7 @@
     <div class="footer-grid">
       <div>
         <h4>The Presence Gap</h4>
-        <p>A conceptual manuscript for <em>Career Development International</em>. Version 10i.</p>
+        <p>A conceptual manuscript for <em>Career Development International</em>. Draft Version 6-6-26c.</p>
       </div>
       <div>
         <h4>Theoretical Architecture</h4>
